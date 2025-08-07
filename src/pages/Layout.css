@@ -1,0 +1,53 @@
+/* src/components/Layout.css */
+.layout-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: linear-gradient(to right, #f7f8fa, #e9f5ff);
+  font-family: 'Comic Sans MS', cursive;
+}
+
+.header {
+  background-color: #ffcc70;
+  padding: 15px;
+  text-align: center;
+  font-size: 28px;
+  color: #333;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.main-content {
+  display: flex;
+  flex: 1;
+}
+
+.sidebar {
+  width: 230px;
+  background-color: #ffefd5;
+  padding: 10px;
+  overflow-y: auto;
+  border-right: 1px solid #ddd;
+}
+
+.sidebar a {
+  display: block;
+  padding: 10px;
+  margin: 6px 0;
+  color: #333;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.sidebar a:hover,
+.sidebar a.active {
+  background-color: #ffd580;
+  color: #000;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
